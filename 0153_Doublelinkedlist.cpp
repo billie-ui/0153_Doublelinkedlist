@@ -90,3 +90,21 @@ public:
             cout << "\nList is empty" << endl;
             return;
         }
+
+        int rollNo;
+        cout << "Enter the roll number of the student whose record is to be deleted: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        // Step 1: Traverse the list to find the node
+        while (current != NULL && current->no != rollNo)
+        {
+            current = current->next;
+        }
+
+        if (current == NULL)
+        {
+            cout << "Record not found" << endl;
+            return;
+        }
