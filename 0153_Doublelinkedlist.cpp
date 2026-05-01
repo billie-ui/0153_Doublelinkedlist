@@ -82,3 +82,11 @@ public:
 
         current->next = newnode;      // Step 12
     }
+
+     void deleteNode()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
